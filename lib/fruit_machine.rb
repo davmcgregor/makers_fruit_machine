@@ -9,7 +9,8 @@ class FruitMachine
     @money = 0
   end
 
-  def display
+  def pull_lever
+    @game_credits -= 1
     @slots.sample(4).join(" | ")
   end
 
